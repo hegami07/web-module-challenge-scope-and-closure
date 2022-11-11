@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+Closure is a function that uses any resource outside of its own scope for its own function body. It can also be used for saving data.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -81,9 +82,9 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+a. Where is closure used in this code? How can you tell? The second function right below the personalDice function is the closure, because it's nested in another function and references a paramater from the global variable which is (name)
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change? The repetition is it's always Dan rolling the dice. The change we can input here is calling zoesRoll so that we could get her results as well and not just Dan's.
+c. What is the lexical scope of `newRoll`? Everything inside the anonymous function.
 
 
 ### Task 3 - Stretch Goals
